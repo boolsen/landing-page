@@ -6,9 +6,18 @@ div {
     display: flex;
 }
 
-h1, h2, ul, img {
+h1, h2, ul, img, p {
     margin: 0;
     padding: 0;
+}
+
+button {
+    width: 10vw;
+    height: 2vw;
+    border-radius: 0.5vw;
+    border: 0px;
+    box-shadow: none;
+    background: none;
 }
 
 .main {
@@ -48,6 +57,7 @@ h1, h2, ul, img {
     flex-direction: column;
     justify-content: space-between;
     height: 15vh;
+    gap: 20px;
 }
 
 .right-side {
@@ -144,12 +154,32 @@ h1, h2, ul, img {
     padding: 3vw 5vw;
     width: 60vw;
     height: 5vw;
-    border-radius: 0.3vw;
+    border-radius: 0.5vw;
 }
 
 .call-text {
     flex-direction: column;
+    flex-grow: 2;
+    justify-content: center;
 }
+
+.bottom-button > button {
+    flex-grow: 1;
+    align-self: center;
+    border: 2px solid white;
+}
+
+
+/* Footer styling */
+.footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vh;
+}
+
+
 
 
 h1 {
